@@ -17,8 +17,10 @@ public class TaskThreeV2 {
                 k++;
             }
         }
-        for (; k < arr.length; k++)
-            sortedArray[k] = key;
-        return Arrays.toString(sortedArray);
+        for (int i = k; i < arr.length; i++) {
+            sortedArray[i] = key;
+        }
+        return "Task 3V2\nGiven array: " + Arrays.toString(arr) +
+                "\nFormatted array: " + Arrays.toString(sortedArray);
     }
 }
