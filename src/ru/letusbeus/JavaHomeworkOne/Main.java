@@ -1,8 +1,4 @@
-import ru.letusbeus.JavaHomeworkOne.TaskOne;
-import ru.letusbeus.JavaHomeworkOne.TaskThree;
-import ru.letusbeus.JavaHomeworkOne.TaskThreeV2;
-import ru.letusbeus.JavaHomeworkOne.TaskTwo;
-import ru.letusbeus.JavaHomeworkOne.TaskFour;
+package ru.letusbeus.JavaHomeworkOne;
 
 public class Main {
     public static void main(String[] args) {
