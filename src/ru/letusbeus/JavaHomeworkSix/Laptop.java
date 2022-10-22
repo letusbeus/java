@@ -11,23 +11,15 @@ public class Laptop {
     private final String graphicsController;
     private final int hdd;
 
-    String[] manufacturers = {"ASUS", "Lenovo", "HP", "Apple", "Acer", "Samsung", "Dell"};
-    String[] laptopTypes = {"Gaming", "Business", "Office", "Ultrabook", "Allround"};
-    Integer[] displaySizes = {12, 13, 14, 15, 17, 19};
-    String[] operatingSystems = {"Windows", "Linux", "MacOS", "Chrome", "DOS"};
-    Integer[] RAMCapacity = {4, 8, 12, 16, 24, 32};
-    String[] graphicsControllers = {"Intel", "AMD", "NVIDIA", "IBM", "GIGABYTE", "MSI"};
-    Integer[] hddCapacity = {64, 128, 256, 512, 1024, 2048};
-
     public Laptop() {
         Random rand = new Random();
-        this.manufacturer = manufacturers[rand.nextInt(manufacturers.length)];
-        this.laptopType = laptopTypes[rand.nextInt(laptopTypes.length)];
-        this.displaySize = displaySizes[rand.nextInt(displaySizes.length)];
-        this.operatingSystem = operatingSystems[rand.nextInt(operatingSystems.length)];
-        this.RAM = RAMCapacity[rand.nextInt(RAMCapacity.length)];
-        this.graphicsController = graphicsControllers[rand.nextInt(graphicsControllers.length)];
-        this.hdd = hddCapacity[rand.nextInt(hddCapacity.length)];
+        this.manufacturer = Params.manufacturers[rand.nextInt(Params.manufacturers.length)];
+        this.laptopType = Params.laptopTypes[rand.nextInt(Params.laptopTypes.length)];
+        this.displaySize = Params.displaySizes[rand.nextInt(Params.displaySizes.length)];
+        this.operatingSystem = Params.operatingSystems[rand.nextInt(Params.operatingSystems.length)];
+        this.RAM = Params.RAMCapacity[rand.nextInt(Params.RAMCapacity.length)];
+        this.graphicsController = Params.graphicsControllers[rand.nextInt(Params.graphicsControllers.length)];
+        this.hdd = Params.hddCapacity[rand.nextInt(Params.hddCapacity.length)];
     }
 
     @Override
