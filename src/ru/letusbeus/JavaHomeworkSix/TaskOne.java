@@ -42,21 +42,21 @@ public class TaskOne {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter required parameter of a laptop " +
                 "(manufacturer, type, display size, OS, RAM, graphics, HDD):");
-        String userSearch = scanner.nextLine();
+        String userInput = scanner.nextLine();
         for (Laptop laptop : laptops) {
-            if (laptop.getManufacturer().equalsIgnoreCase(userSearch)) {
+            if (laptop.getManufacturer().equalsIgnoreCase(userInput)) {
                 selectedLaptops.add(laptop);
-            } else if (laptop.getLaptopType().equalsIgnoreCase(userSearch)) {
+            } else if (laptop.getLaptopType().equalsIgnoreCase(userInput)) {
                 selectedLaptops.add(laptop);
-            } else if (laptop.getDisplaySize().equals(userSearch)) {
+            } else if (laptop.getDisplaySize().equals(userInput)) {
                 selectedLaptops.add(laptop);
-            } else if (laptop.getOperatingSystem().equalsIgnoreCase(userSearch)) {
+            } else if (laptop.getOperatingSystem().equalsIgnoreCase(userInput)) {
                 selectedLaptops.add(laptop);
-            } else if (laptop.getRAM().equalsIgnoreCase(userSearch)) {
+            } else if (laptop.getRAM().equalsIgnoreCase(userInput)) {
                 selectedLaptops.add(laptop);
-            } else if (laptop.getGraphicsController().equalsIgnoreCase(userSearch)) {
+            } else if (laptop.getGraphicsController().equalsIgnoreCase(userInput)) {
                 selectedLaptops.add(laptop);
-            } else if (laptop.getHdd().equalsIgnoreCase(userSearch)) {
+            } else if (laptop.getHdd().equalsIgnoreCase(userInput)) {
                 selectedLaptops.add(laptop);
             }
         }
