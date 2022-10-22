@@ -41,7 +41,7 @@ public class TaskOne {
     public static void userSearch() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter required parameter of a laptop " +
-                "(manufacturer, type, display size, OS, RAM, HDD):");
+                "(manufacturer, type, display size, OS, RAM, graphics, HDD):");
         String userSearch = scanner.nextLine();
         for (Laptop laptop : laptops) {
             if (laptop.getManufacturer().equalsIgnoreCase(userSearch)) {
